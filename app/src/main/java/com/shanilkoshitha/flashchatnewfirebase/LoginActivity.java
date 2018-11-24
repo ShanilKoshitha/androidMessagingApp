@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    // TODO: Add member variables here:
+    
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
@@ -47,14 +47,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // TODO: Grab an instance of FirebaseAuth
+        
         mAuth = FirebaseAuth.getInstance();
 
     }
 
     // Executed when Sign in button pressed
     public void signInExistingUser(View v)   {
-        // TODO: Call attemptLogin() here
+        
         attemptLogin();
 
     }
@@ -66,11 +66,11 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // TODO: Complete the attemptLogin() method
+    
     private void attemptLogin() {
 
 
-        // TODO: Use FirebaseAuth to sign in with email & password
+        
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
 
@@ -98,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    // TODO: Show error on screen with an alert dialog
+    
     private void showErrorDiag(String message){
 
         new AlertDialog.Builder(this)
