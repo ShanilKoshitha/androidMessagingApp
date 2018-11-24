@@ -58,7 +58,7 @@ public class MainChatActivity extends AppCompatActivity {
 
     }
 
-    // TODO: Retrieve the display name from the Shared Preferences
+    
     private void setUpDisplayName(){
         SharedPreferences pref = getSharedPreferences(RegisterActivity.CHAT_PREFS, MODE_PRIVATE);
 
@@ -68,7 +68,7 @@ public class MainChatActivity extends AppCompatActivity {
 
     private void sendMessage() {
 
-        // TODO: Grab the text the user typed in and push the message to Firebase
+        
         Log.d("FlashChat", "Message sent");
 
         String input = mInputText.getText().toString();
@@ -91,7 +91,7 @@ public class MainChatActivity extends AppCompatActivity {
     public void onStop() {
         super.onStop();
 
-        // TODO: Remove the Firebase event listener on the adapter.
+       
         mAdapter.cleanup();
     }
 
